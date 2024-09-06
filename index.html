@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacija za rangiranje filmova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Moji omiljeni filmovi</h1>
+        </header>
+        <main>
+            <form id="movie-form">
+                <div class="movietitle">
+                    <label for="movie-title">Naziv filma</label>
+                    <input type="text" id="movie-title" required>
+                </div>
+                <div class="movieyear">
+                    <label for="movie-year">Godina filma</label>
+                    <input type="number" id="movie-year" required min="1895" max="2024">
+                </div>
+                <div class="movieBtn"><button type="submit" class="moviebtnbtn">Dodaj film</button></div>
+            </form>
+            <ol id="movie-list">
+                <!-- <li class="movie-item">
+                    <div class="movie-item-info">
+                        <h3>Prvi film</h3>
+                        <span>Godina: <em>2021</em></span>
+                    </div>
+                    <div class="controls">
+                        <div class="up-down">
+                            <button class="up-btn">&#9650;</button>
+                            <button class="down-btn">&#9660;</button>
+                        </div>
+                        <div><button class="delete-btn">&#10005;</button></div>
+                    </div>
+                </li>
+                <li class="movie-item">
+                    <div class="movie-item-info">
+                        <h3>Drugi film</h3>
+                        <span>Godina: <em>2024</em></span>
+                    </div>
+                    <div class="controls">
+                        <div class="up-down">
+                            <button class="up-btn">&#9650;</button>
+                            <button class="down-btn">&#9660;</button>
+                        </div>
+                        <div><button class="delete-btn">&#10005;</button></div>
+                    </div>
+                </li> -->
+            </ol>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
